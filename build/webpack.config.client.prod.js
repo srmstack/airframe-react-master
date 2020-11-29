@@ -143,12 +143,13 @@ module.exports = {
     devServer: {
         hot: false,
         contentBase: config.distDir,
-	 disableHostCheck: true,
+        // eslint-disable-next-line no-mixed-spaces-and-tabs
+	    disableHostCheck: true,
         compress: true,
         historyApiFallback: {
             index: '/'
         },
-        host: 'localhost',
+        host: '0.0.0.0',
         port: process.env.PORT || 3000
     }
 }
